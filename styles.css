@@ -1,0 +1,70 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@300;400;600&display=swap");
+
+body {
+  background-color: #fcf1f1;
+  font-family: "Trispace", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0px;
+}
+
+.canvas {
+  width: 650px;
+  height: 650px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}
+
+.controls .controls__btns {
+  margin-bottom: 20px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  font-weight: 600;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.controls__btns button:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.controls__btns button:active {
+  transform: scale(0.96);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
